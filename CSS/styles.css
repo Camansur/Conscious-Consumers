@@ -1,0 +1,10 @@
+.header {
+	background-color: #1919198a;
+	width: 960px;
+	height: 60px;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 12px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 1px #9e9e9e inset
+}
