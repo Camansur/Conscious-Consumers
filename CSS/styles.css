@@ -65,7 +65,8 @@ li a:hover {
 
 #logo {
 	margin-left: 17%;
-	width: 150px;
+	width: 125px;
+    margin-top: 10px
 }
 
 .intro {
