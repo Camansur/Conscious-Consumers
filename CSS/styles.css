@@ -74,7 +74,7 @@ li a:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px sky blue;
+  box-shadow: inset 0 0 5px lightblue;
   border-radius: 5px;
 }
 
