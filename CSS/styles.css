@@ -1,6 +1,6 @@
 body {
-	background-image: url(../images/background.jpg);
 	/*Image credits to Grant Ritchie from Unsplash https://unsplash.com/photos/x1w_Q78xNEY */
+	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
