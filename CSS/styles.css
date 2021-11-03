@@ -4,6 +4,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -20,6 +22,17 @@ p {
 	height: 60px;
 	box-shadow: 0 0 1px 1px #c3c3c3 inset
 }
+
+.slideshow {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.slideShowImage {
+	border-radius: 10px;
+	box-shadow: 0 0 2px 1px #959595;
+}
+
 .nav {
 	margin: 0 auto;
 	display: flex;
