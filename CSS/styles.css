@@ -90,7 +90,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: auto | dark | light | blue;    /* color of the scroll thumb */
+  background-color: darkgreen;    /* color of the scroll thumb */
   border-radius: 30px;       /* roundness of the scroll thumb */
   border: 3px solid lightblue;  /* creates padding around scroll thumb */
 }
