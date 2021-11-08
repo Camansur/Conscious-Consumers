@@ -95,8 +95,3 @@ body::-webkit-scrollbar-thumb {
   border: 5px solid lightblue;  /* creates padding around scroll thumb */
 }
 
-<style>
-p {
- text-align:center
-}
-</style>
