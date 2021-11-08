@@ -86,11 +86,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: blue;        /* color of the tracking area */
+  background: lightblue;        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white;    /* color of the scroll thumb */
+  background-color: auto | dark | light | blue;    /* color of the scroll thumb */
   border-radius: 30px;       /* roundness of the scroll thumb */
-  border: 3px solid blue;  /* creates padding around scroll thumb */
+  border: 3px solid lightblue;  /* creates padding around scroll thumb */
 }
