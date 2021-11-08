@@ -82,7 +82,7 @@ li a:hover {
 	padding: 10px;
 }
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 15px;               /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
@@ -92,5 +92,5 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: darkgreen;    /* color of the scroll thumb */
   border-radius: 30px;       /* roundness of the scroll thumb */
-  border: 3px solid lightblue;  /* creates padding around scroll thumb */
+  border: 5px solid lightblue;  /* creates padding around scroll thumb */
 }
