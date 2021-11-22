@@ -1,5 +1,6 @@
 body {
 	/*Image credits to Grant Ritchie from Unsplash https://unsplash.com/photos/x1w_Q78xNEY */
+	/*references: w3schoools.com*/
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -49,7 +50,7 @@ li {
 	display: inline-block;
 }
 
-li a {
+.nav li a {
 	display: inline-block;
 	text-decoration: none;
 	padding: 20px 45px;
@@ -95,3 +96,37 @@ body::-webkit-scrollbar-thumb {
   border: 5px solid lightblue;  /* creates padding around scroll thumb */
 }
 
+.resources {
+	display: grid;
+}
+
+.collapsible {
+	background-color: #f1f1f1;
+	padding: 19px;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px 1px;
+	cursor: pointer;
+	font-size: 15px;
+	margin-top: 3px;
+}
+
+.active, .collapsible:hover {
+  background-color: #e6ffc5;
+}
+
+.details {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.resList {
+	display: grid;
+	text-align:center;
+}
+
+.resList li {
+	padding-bottom: 10px;
+}
