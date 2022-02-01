@@ -114,6 +114,16 @@ form {
     display: inline-block;
 }
 
+calculator {
+	 	width: 60%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+		text: lightgreen;
+  		box-sizing: border-box;
+  		border: 2px solid lightgreen;
+  		border-radius: 4px;
+}
+
 input[type=text] {
   		width: 60%;
   		padding: 12px 20px;
