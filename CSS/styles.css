@@ -102,12 +102,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 input[type=text] {
-  		width: 100%;
+  		width: 40%;
   		padding: 12px 20px;
   		margin: 8px 0;
+		font: lightgreen;
   		box-sizing: border-box;
   		border: 2px solid lightgreen;
-  		border-radius: 5px;
+  		border-radius: 4px;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
 }
 
 .collapsible {
