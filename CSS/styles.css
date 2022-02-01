@@ -101,8 +101,14 @@ body::-webkit-scrollbar-thumb {
 	display: grid;
 }
 
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+
 input[type=text] {
-		text-align: center;
   		width: 40%;
   		padding: 12px 20px;
   		margin: 8px 0;
