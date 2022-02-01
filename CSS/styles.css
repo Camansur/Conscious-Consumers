@@ -101,6 +101,15 @@ body::-webkit-scrollbar-thumb {
 	display: grid;
 }
 
+input[type=text] {
+  		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		box-sizing: border-box;
+  		border: 2px solid lightgreen;
+  		border-radius: 5px;
+}
+
 .collapsible {
 	background-color: #f1f1f1;
 	padding: 19px;
