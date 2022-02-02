@@ -114,7 +114,7 @@ form {
     display: inline-block;
 }
 
-calculator {
+.calculator {
 	 	width: 60%;
   		padding: 12px 20px;
   		margin: 8px 0;
@@ -124,7 +124,7 @@ calculator {
   		border-radius: 4px;
 }
 
-input[type=text] {
+.calculator[type=text] {
   		width: 60%;
   		padding: 12px 20px;
   		margin: 8px 0;
@@ -134,7 +134,7 @@ input[type=text] {
   		border-radius: 4px;
 }
 
-input[type=text]:focus {
+.calculator[type=text]:focus {
   background-color: lightblue;
 }
 
