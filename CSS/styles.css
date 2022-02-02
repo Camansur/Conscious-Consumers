@@ -124,7 +124,7 @@ form {
   		border-radius: 4px;
 }
 
-.calculator[type=text] {
+.calculator[type=label] {
   		width: 60%;
   		padding: 12px 20px;
   		margin: 8px 0;
@@ -134,7 +134,7 @@ form {
   		border-radius: 4px;
 }
 
-.calculator[type=text]:focus {
+.calculator[type=label]:focus {
   background-color: lightblue;
 }
 
