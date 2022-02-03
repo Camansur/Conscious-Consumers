@@ -1,7 +1,6 @@
 body {
 	/*Image credits to Grant Ritchie from Unsplash https://unsplash.com/photos/x1w_Q78xNEY*/
 	/*references: w3schoools.com*/
-
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -62,6 +61,8 @@ li {
 	text-decoration: none;
 	padding: 20px 45px;
 	color: black;
+	font-family: "Verdana", sans-serif;
+	font-size: 90%;
 }
 
 li a:hover {
@@ -89,18 +90,36 @@ li a:hover {
 .intro p {
 	padding: 10px;
 }
+
+p, h1, h2, h3, label {
+	font-family: "Verdana", sans-serif;
+}
+
+h2 {
+	padding-top: 15px;
+}
+
+.intro h1 {
+	padding-top: 8px;
+}
+
 body::-webkit-scrollbar {
-  width: 15px;               /* width of the entire scrollbar */
+	width: 15px;
+               /* width of the entire scrollbar */;
 }
 
 body::-webkit-scrollbar-track {
-  background: lightblue;        /* color of the tracking area */
+	background: lightblue;
+        /* color of the tracking area */;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgreen;    /* color of the scroll thumb */
-  border-radius: 30px;       /* roundness of the scroll thumb */
-  border: 5px solid lightblue;  /* creates padding around scroll thumb */
+	background-color: darkgreen;
+    /* color of the scroll thumb */
+	border-radius: 30px;
+       /* roundness of the scroll thumb */
+	border: 5px solid lightblue;
+  /* creates padding around scroll thumb */;
 }
 
 .resources {
@@ -108,26 +127,42 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    text-align: center;
+	text-align: center;
 }
+
 form {
-    display: inline-block;
+	display: inline-block;
 }
 
-.calculator {
-
+.calculator input[type=text] {
+	margin: 8px;
+	box-sizing: border-box;
+	border: 2px solid #7cc124;
+	border-radius: 4px;
+	padding: 5px;
 }
 
-.calculator input {
-		text: lightgreen;
-		margin: 8px;
-  		box-sizing: border-box;
-  		border: 2px solid lightgreen;
-  		border-radius: 4px;
+.calculator input[type=text]:hover, input[type=text]:focus {
+	background-color: #f5f5f5;
 }
 
-.calculator input:focus {
-  background-color: lightblue;
+.calculator input[type=submit] {
+	background-color: #82c62a;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+}
+
+.calculator input[type=submit]:hover {
+	background-color: #7bdb00;
 }
 
 .collapsible {
@@ -142,19 +177,19 @@ form {
 }
 
 .active, .collapsible:hover {
-  background-color: #e6ffc5;
+	background-color: #e6ffc5;
 }
 
 .details {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
 }
 
 .resList {
 	display: grid;
-	text-align:center;
+	text-align: center;
 }
 
 .resList li {
