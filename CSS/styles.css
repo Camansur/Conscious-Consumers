@@ -120,7 +120,7 @@ form {
   		margin: 8px 0;
 }
 
-.calculator label {
+.calculator input {
 		text: lightgreen;
   		box-sizing: border-box;
   		border: 2px solid lightgreen;
