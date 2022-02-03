@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Conscious Consumers</title>
+	<meta name="author" content="Christopher Mansur, Jennifer Tichavsky, and Steve Rodriguez">
+	<link rel="stylesheet" href="css/styles.css"> </head>
+
+<body>
+	<a href="index.html"><img id="logo" src="images/logo.png" alt="A logo."></a>
+	<div class=header>
+		<div class=nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tools.html">Tools</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="joinus.html"><u>Join Us</u></a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class=intro>
+		<h2><b>Contact Us!</b></h2>
+		<p style="text-align:center">We'd like to hear from you. Whether you'd like more information not provided on the site or to simply report a bug, give us a shout and we promise to get back to you as soon as possible!</p>
+		
+		<div class=calculator>
+		<h3>Pease feel free to reach out to the team!</h3>
+		<form>
+  		<label for="fname">First name:</label><br>
+  		<input type="text" id="fname" name="fname" placeholder="First name"><br>
+  		<label for="lname">Last name:</label><br>
+  		<input type="text" id="lname" name="lname" placeholder="Last name"><br>
+		<label for="email">Email:</label><br>
+  		<input type="text" id="email" name="email" placeholder="Email"><br>
+		<br>
+  		<label for="ontact"> We try to get back to you in 48 hours.</label><br>
+		<input id= typcontacte="submit" value="Contact">
+	</form>
+	</div>
+	</div>
+	
+	<script src="Javascript/script.js"></script>
+	<noscript>Your browser does not support JavaScript. Please enable JavaScript for a better experience.</noscript>
+</body>
+
+</html>
