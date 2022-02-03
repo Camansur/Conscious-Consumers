@@ -72,7 +72,7 @@ li a:hover {
 }
 
 #logo {
-	margin-left: 17%;
+	margin-right: 60%;
 	width: 125px;
 	margin-top: 10px;
 }
@@ -115,12 +115,12 @@ form {
 }
 
 .calculator {
-  		padding: 12px 20px;
-  		margin: 8px 0;
+
 }
 
 .calculator input {
 		text: lightgreen;
+		margin: 8px;
   		box-sizing: border-box;
   		border: 2px solid lightgreen;
   		border-radius: 4px;
