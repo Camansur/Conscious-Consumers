@@ -52,3 +52,18 @@ for(j = 0; j < collapsible.length; j++) {
 		}
 	});
 }
+
+function mpgCalculate(){
+
+	var costOutput = 0;
+	
+	if (document.getElementById("mpg").value == 0 || document.getElementById("fillup").value == 0 || document.getElementById("gascost").value == 0){
+		document.getElementById("mpgOutput").innerHTML = "Please fill out all boxes!";
+	}else{
+		costOutput = document.getElementById("mpg").value * document.getElementById("fillup").value * document.getElementById("gascost").value;
+		document.getElementById("mpgOutput").innerHTML = "We estimate that you pay about $" + costOutput.toFixed(2) + " in gas every week!";
+	}
+	
+	
+	
+}
