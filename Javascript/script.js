@@ -55,15 +55,28 @@ for(j = 0; j < collapsible.length; j++) {
 
 function mpgCalculate(){
 
-	var costOutput = 0;
+	var costOutput = 0.00;
+	var elecOutput = 0.00;
+	var savings = 0.00;
 	
-	if (document.getElementById("mpg").value == 0 || document.getElementById("fillup").value == 0 || document.getElementById("gascost").value == 0){
-		document.getElementById("mpgOutput").innerHTML = "Please fill out all boxes!";
+	if (document.getElementById("gallons").value == 0 || document.getElementById("fillup").value == 0 || document.getElementById("gascost").value == 0){
+		document.getElementById("gasOutput").innerHTML = "Please fill out all boxes!";
 	}else{
-		costOutput = document.getElementById("mpg").value * document.getElementById("fillup").value * document.getElementById("gascost").value;
-		document.getElementById("mpgOutput").innerHTML = "We estimate that you pay about $" + costOutput.toFixed(2) + " in gas every week!";
+		costOutput = (document.getElementById("gallons").value * document.getElementById("fillup").value * document.getElementById("gascost").value).toFixed(2);
+		document.getElementById("gasOutput").innerHTML = "We estimate that you pay about $" + costOutput + " in gas every month!";
+		elecOutput = (12.30 * document.getElementById("fillup").value).toFixed(2);
+		document.getElementById("gasOutput2").innerHTML = "If you were to own an electric vehicle, such as a Tesla Model S, you would pay $" + elecOutput + " in electricity every month";
+		
+		costOutput = parseFloat(costOutput);
+		elecOutput = parseFloat(elecOutput);
+
+		if (costOutput >= elecOutput){
+			savings = (costOutput - elecOutput);
+		}else if (elecOutput < costOutput){
+			savings = (elecOutput - costOutput);
+		}
+
+		document.getElementById("gasOutput3").innerHTML = "That is a total savings of $" + savings.toFixed(2) + " in gas every month";
 	}
-	
-	
 	
 }
