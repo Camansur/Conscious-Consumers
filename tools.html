@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/styles.css"> </head>
 	<link rel="shortcut icon" href="favicon.ico">
 
-<body>
+<body onload="getGasPrice()">
 	<a href="index.html"><img id="logo" src="images/logo.png" alt="A logo."></a>
 	<div class=header>
 		<div class=nav>
@@ -24,7 +24,7 @@
 
 	<div class=intro>
 		<h2><b>Welcome to our Tools Page!</b></h2>
-		<p style="text-align:center">This page provides calculators to help calculate costs and savings.</p>
+		<p>This page provides calculators to help calculate costs and savings.</p>
 			<div class=calculator>
     		<h3>Fuel consumption price calculator</h3>
 			<br>
@@ -33,13 +33,21 @@
   		<label for="fillup">How many times a month do you need to fill up?</label><br>
   		<input type="number" id="fillup" name="fillup" placeholder="Fill up amount"><br>
   		<label for="gascost">Current price of 87 octane regular gas (AZ)</label><br>
-  		<input type="number" id="gascost" name="gascost" placeholder="Gas price" value=3.623><br>
+  		<input type="number" id="gascost" name="gascost" placeholder="Updating gas price..." ><br>
 		<input onclick="mpgCalculate()" type="submit" value="Calculate">
 		<p id="gasOutput"></p>
 		<p id="gasOutput2"></p>
 		<p id="gasOutput3"></p>
 		</div>
+		<h3>Solar Savings Estimator - Project Sunroof</h3>
+		<p>Interested in finding out how much you would save if you decided to get solar panels?</p>
+		<!--Project Sunroof logo credits - https://sunroof.withgoogle.com-->
+		<p><a href="https://sunroof.withgoogle.com/" target="_blank"><img id="calcLogo" src="images/ProjectSunroof.jpg" alt="Project Sunroof Logo"></a></p>
+		<br>
+		<p></p>
+		<br>
 		</div>
+
 	<script src="Javascript/script.js"></script>
 	<noscript>Your browser does not support JavaScript. Please enable JavaScript for a better experience.</noscript>
 </body>

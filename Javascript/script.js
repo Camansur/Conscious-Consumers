@@ -12,6 +12,8 @@ var collapsible = document.getElementsByClassName("collapsible");
 //Incremental value for collapsible
 var j;
 
+var gasPrice = 0.00;
+
 //This function iterates through the imagesPath array to change the image in the slideshow after a specific amount of time (4000ms = 4 seconds in this case)
 function slideshow() {
 
@@ -53,12 +55,33 @@ for(j = 0; j < collapsible.length; j++) {
 	});
 }
 
+function getGasPrice(){
+	fetch("https://api.collectapi.com/gasPrice/stateUsaPrice?state=AZ", {
+	"method": "GET",
+	"headers": {
+		"authorization": "apikey 7HHE7brl02AG6tMXcFzny4:1tw6EZ7jIIwRYbnm6LJWXB - disable"
+	}
+})
+.then(response => {
+	return response.json();
+})
+.then(
+	(response) => {
+		gasPrice = response.result.state.gasoline;
+		//console.log(gasPrice);
+		document.getElementById("gascost").value = gasPrice;
+		}
+)
+.catch(err => {
+	console.error(err);
+});
+}
+
 function mpgCalculate(){
 
 	var costOutput = 0.00;
 	var elecOutput = 0.00;
 	var savings = 0.00;
-	var gasPrice = 0.00;
 
 	
 	if (document.getElementById("gallons").value == 0 || document.getElementById("fillup").value == 0 || document.getElementById("gascost").value == 0){

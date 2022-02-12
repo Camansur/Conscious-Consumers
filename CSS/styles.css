@@ -195,3 +195,12 @@ form {
 .resList li {
 	padding-bottom: 10px;
 }
+
+#calcLogo {
+	opacity: 1;
+	border-radius: 10px;
+}
+
+#calcLogo:hover {
+	opacity: .6;
+}
