@@ -58,6 +58,8 @@ function mpgCalculate(){
 	var costOutput = 0.00;
 	var elecOutput = 0.00;
 	var savings = 0.00;
+	var gasPrice = 0.00;
+
 	
 	if (document.getElementById("gallons").value == 0 || document.getElementById("fillup").value == 0 || document.getElementById("gascost").value == 0){
 		document.getElementById("gasOutput").innerHTML = "Please fill out all boxes!";
