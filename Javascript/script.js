@@ -59,7 +59,7 @@ function getGasPrice(){
 	fetch("https://api.collectapi.com/gasPrice/stateUsaPrice?state=AZ", {
 	"method": "GET",
 	"headers": {
-		"authorization": "apikey 7HHE7brl02AG6tMXcFzny4:1tw6EZ7jIIwRYbnm6LJWXB - disable"
+		"authorization": "apikey 7HHE7brl02AG6tMXcFzny4:1tw6EZ7jIIwRYbnm6LJWXB - disabled"
 	}
 })
 .then(response => {
@@ -74,6 +74,7 @@ function getGasPrice(){
 )
 .catch(err => {
 	console.error(err);
+	document.getElementById("gascost").value = 3.60;
 });
 }
 
