@@ -105,12 +105,14 @@ h2 {
 
 body::-webkit-scrollbar {
 	width: 15px;
-               /* width of the entire scrollbar */;
+               /* width of the entire scrollbar */
+	;
 }
 
 body::-webkit-scrollbar-track {
 	background: lightblue;
-        /* color of the tracking area */;
+        /* color of the tracking area */
+	;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -119,7 +121,8 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 30px;
        /* roundness of the scroll thumb */
 	border: 5px solid lightblue;
-  /* creates padding around scroll thumb */;
+  /* creates padding around scroll thumb */
+	;
 }
 
 .resources {
