@@ -39,7 +39,10 @@
 		<br>
   		<label for="feedback"> We try to get back to you in 48 hours. Please keep comments at 255 characters or less.</label><br>
 		<br>
-		<textarea id="feedback" rows="7" cols="60" placeholder="Please enter message here..." name="feedback"></textarea>
+		<textarea onkeyup="textCounter(this,'counter',255)" id="feedback" rows="7" cols="60" maxlength="255" placeholder="Please enter message here..." name="feedback"></textarea>
+		<br>
+		<label for="counter">Characters left:</label>
+		<input disabled maxlength="3" size="1" value="255" id="counter">
 		<br>
 		<input id=sendFeedback type="submit" value="Send">
 		<p></p>

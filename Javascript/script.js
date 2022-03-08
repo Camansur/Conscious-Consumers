@@ -1,4 +1,4 @@
-//Image credits from Unsplash Abby Anaday https://unsplash.com/photos/Nnn2Dc6niVU, Jeremy Bezanger https://unsplash.com/photos/k8HniqcdYS4, and Gustavo Quepón https://unsplash.com/photos/pF_2lrjWiJE
+//Image credits from Unsplash Abby Anaday https://unsplash.com/photos/Nnn2Dc6niVU, Jeremy Bezanger https://unsplash.com/photos/k8HniqcdYS4, and Gustavo Quepï¿½n https://unsplash.com/photos/pF_2lrjWiJE
 //Code references: w3schools.com
 /*jshint esversion: 6 */
 //This variable holds the path to the images to rotate through in the slideshow. 
@@ -80,3 +80,14 @@ function mpgCalculate() {
 		document.getElementById("gasOutput3").innerHTML = "That is a total savings of $" + savings.toFixed(2) + " in gas every month";
 	}
 }
+
+//Character left function
+function textCounter(tArea,counter,maxlimit){
+	var count = document.getElementById(counter);
+	if ( tArea.value.length > maxlimit ) {
+	   tArea.value = tArea.value.substring( 0, maxlimit );
+	 return false;
+	} else {
+	   count.value = maxlimit - tArea.value.length;
+	}
+   }
