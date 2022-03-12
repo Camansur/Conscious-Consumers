@@ -12,10 +12,10 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
     $success = False;
 
     //Database connection information variables
-    $host = "localhost";
+    $host = "conscious-db.clx2jdgotjoe.us-east-1.rds.amazonaws.com";
     $dbUsername = "root";
     $dbPassword = "mysqlift402";
-    $dbName = "test";
+    $dbName = "consciousdb";
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
