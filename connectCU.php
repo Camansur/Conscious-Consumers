@@ -8,6 +8,9 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
     $email = $_POST['email'];
     $feedback = $_POST['feedback'];
 
+    //Boolean to determine whether to open the success page or error page.
+    $success = False;
+
     //Database connection information variables
     $host = "localhost";
     $dbUsername = "root";
@@ -39,6 +42,7 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
             if ($stmt->execute())
             {
                 echo "Success!";
+                $success = True;
             }
             else
             {
@@ -51,6 +55,14 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
         }
         $stmt->close();
         $conn->close();
+
+        if($success == TRUE){
+            header("location: feedback.html");
+        }else{
+            header("location: error.html");
+        }
+        
+        die();
     }
 }
 else

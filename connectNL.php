@@ -7,6 +7,9 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
     $lname = $_POST['lname'];
     $email = $_POST['email'];
 
+    //Boolean to determine whether to open the success page or error page.
+    $success = False;
+
     //Database connection information variables
     $host = "localhost";
     $dbUsername = "root";
@@ -37,6 +40,7 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
             $stmt->bind_param("sss", $fname, $lname, $email);
             if ($stmt->execute())
             {
+                $success = True;
                 echo "Success!";
             }
             else
@@ -46,10 +50,17 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']))
         }
         else
         {
-            echo "Someone has already registered with this email.";
+            echo "Someone is already registered with this email.";
         }
         $stmt->close();
         $conn->close();
+
+        if($success == TRUE){
+            header("location: joined.html");
+        }else {
+            header("location: error.html");
+        }
+        die();
     }
 }
 else
